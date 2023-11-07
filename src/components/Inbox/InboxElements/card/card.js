@@ -1,0 +1,6 @@
+export const cards = [
+    {id: 1,read:false ,fav: true, rep: false,title: 'Vegies', from: 'axeld makarov', time: '9:14', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa error distinctio officia in numquam, cupiditate voluptates, aliquam libero sapiente quam totam vero amet delectus esse tenetur minus saepe unde.'},
+    {id: 2,read:false ,fav: false, rep: true,title: 'Algorithms', from: 'John doe', time: '15:00', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa error distinctio officia in numquam, cupiditate voluptates, aliquam libero sapiente quam totam vero amet delectus esse tenetur minus saepe unde.'},
+    {id: 3,read:false ,fav: false, rep: false,title: 'Art of War', from: 'max griboedov', time: '20:20', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa error distinctio officia in numquam, cupiditate voluptates, aliquam libero sapiente quam totam vero amet delectus esse tenetur minus saepe unde.'},
+    {id: 4,read:false ,fav: false, rep: true,title: 'Latest Shopping news', from: 'yana anischuk', time: '13:43', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa error distinctio officia in numquam, cupiditate voluptates, aliquam libero sapiente quam totam vero amet delectus esse tenetur minus saepe unde.'}
+]

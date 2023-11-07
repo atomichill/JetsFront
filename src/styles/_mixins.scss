@@ -1,0 +1,56 @@
+@mixin button {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Tilt Neon';
+    font-size: $font14;
+    color: $txtUnactiveClr;
+    cursor: pointer;
+}
+
+@mixin btn-wrap {
+    cursor: pointer;
+    height: $buttonHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+}
+
+@mixin btn-container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin reset {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+@mixin header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 2px solid $txtUnactiveClr;
+}
+
+@mixin inpt{
+    margin-left: 10px;
+    background-color: #16A085;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #BDC3C7;
+}
+
+@mixin title{
+    font-family: 'Tilt Neon';
+    color: #BDC3C7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
