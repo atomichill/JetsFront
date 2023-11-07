@@ -28,7 +28,10 @@ import '../../../../fonts.css'
     }
     button{
         margin-top: 10px;
-        @include button
+        @include button;
+        &:hover{
+            color: white;
+        }
     }
 }
 </style>

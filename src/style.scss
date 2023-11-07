@@ -46,3 +46,6 @@ input{
   -webkit-appearance: none;
   border-radius: 0;
 }
+::-webkit-scrollbar{
+  width: 0;
+}

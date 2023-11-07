@@ -8,7 +8,8 @@ export const store = createStore({
             mail: null,
             sort: '',
             search: '',
-            settings: ''
+            settings: '',
+            showBlockWindow: false
         }
     },
     mutations: {
@@ -36,6 +37,9 @@ export const store = createStore({
         },
         clearSetting(state){
             state.settings = ''
+        },
+        setShowBlockWindow(state){
+            state.showBlockWindow = !state.showBlockWindow
         }
     }
 })
