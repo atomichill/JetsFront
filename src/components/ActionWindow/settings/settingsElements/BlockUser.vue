@@ -13,7 +13,7 @@ import '../../../../fonts.css'
 .block-wrap{
     label{
         font-family: 'Tilt Neon';
-        color: white;
+        color: $txtActiveClr;
     }
     input{
         @include inpt

@@ -31,7 +31,7 @@ import '../../../../fonts.css'
             width: 100%;
             height: auto;
             border-radius: 15px;
-            border: 3px solid white;
+            border: 3px solid $txtActiveClr;
             &:hover{
                 cursor: pointer;
             }
@@ -45,7 +45,7 @@ import '../../../../fonts.css'
             width: 100%;
             transition: .5s ease;
             opacity:0;
-            color: white;
+            color: $txtActiveClr;
             font-size: 20px;
             padding: 20px;
             text-align: center;
@@ -65,7 +65,7 @@ import '../../../../fonts.css'
         h1{
             font-family: 'Tilt Neon';
             font-size: 20px;
-            color: white;
+            color: $txtActiveClr;
         }
         p{
             margin-top: 5px;

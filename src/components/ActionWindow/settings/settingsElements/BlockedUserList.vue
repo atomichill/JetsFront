@@ -30,7 +30,7 @@ const items = ref(blocked);
       margin-top: 10px;
       display: flex;
       justify-content: space-between;
-      color: white;
+      color: $txtActiveClr;
       font-family: 'Tilt Neon';
 
       span{

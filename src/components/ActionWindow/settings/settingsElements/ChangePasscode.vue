@@ -30,7 +30,7 @@ import '../../../../fonts.css'
         margin-top: 10px;
         @include button;
         &:hover{
-            color: white;
+            color: $txtActiveClr;
         }
     }
 }

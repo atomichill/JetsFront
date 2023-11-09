@@ -34,13 +34,11 @@ import SupportSettings from './settingsElements/view/SupportSettings.vue';
 .settings-wrap{
     width: 100%;
     height: 100%;
-    background-color: #1ABC9C;
+    background-color: $bg;
     padding: 60px;
 
     .general-settings{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        @include flex-grd;
         h1{
             @include title
         }

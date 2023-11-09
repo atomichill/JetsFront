@@ -18,10 +18,8 @@ import LogOut from './ProfileElements/LogOut.vue';
 .profile-wrap{
     width: 310px;
     height: 100vh;
-    background-color: #1ABC9C;
+    background-color: $bg;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex-col;
 }
 </style>

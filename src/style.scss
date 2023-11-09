@@ -46,6 +46,10 @@ input{
   -webkit-appearance: none;
   border-radius: 0;
 }
+input[type="radio"] {
+  -webkit-appearance: radio; /* or auto */
+  border-radius: initial;
+}
 ::-webkit-scrollbar{
   width: 0;
 }

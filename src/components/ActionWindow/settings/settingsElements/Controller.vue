@@ -24,6 +24,7 @@ const settings = ref(controller)
 </script>
 
 <style lang="scss" scoped>
+
 .controller-wrap{
     .set{
         display: flex;
@@ -53,11 +54,11 @@ const settings = ref(controller)
 
         &:hover{
             span{
-                color: white;
+                color:$txtActiveClr;
             }
             .txt{
                 h1{
-                    color: white;
+                    color:$txtActiveClr;
                 }
             }
         }

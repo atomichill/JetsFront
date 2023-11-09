@@ -39,7 +39,7 @@
 
 @mixin inpt{
     margin-left: 10px;
-    background-color: #16A085;
+    background-color: $bgBtnClr;
     height: 25px;
     outline: none;
     border: none;
@@ -53,4 +53,26 @@
     color: #BDC3C7;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@mixin flex-col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flex-grd{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin text{
+    font-family: 'Tilt Neon';
+    color: $txtActiveClr;
 }

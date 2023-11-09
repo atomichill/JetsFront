@@ -14,27 +14,25 @@ import '../../../fonts.css'
 <style lang="scss" scoped>
 .image-wrap{
     margin-top: 30px;
-    display: flex;
+    @include flex-col;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     h1{
         font-size: 15px;
         font-family:'Tilt Neon';
-        color: white;
+        color:$txtActiveClr;
     }
     .image{
         margin-top: 10px;
         width: 70px;
         border-radius: 20%;
-        border: 2px solid white;
+        border: 2px solid $txtActiveClr;
     }
     p{
         font-size: 13px;
         margin-top: 10px;
         font-family:'Tilt Neon';
-        color: white;
+        color: $txtActiveClr;
     }
 }
 </style>
