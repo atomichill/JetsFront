@@ -15,6 +15,7 @@ export const store = createStore({
     mutations: {
         setOption(state, option) {
             state.option = option
+            console.log(state.option)
         },
         setFilter(state, filter){
             state.filter = filter
@@ -24,7 +25,6 @@ export const store = createStore({
         },
         setSort(state,sort){
             state.sort = sort
-            console.log(state.sort)
         },
         setSearch(state,query){
             state.search = query

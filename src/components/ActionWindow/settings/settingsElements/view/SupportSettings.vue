@@ -1,12 +1,12 @@
 <template>
     <div>
-        <InDev/>
+        <Contact/>
         <GetBack/>
     </div>
 </template>
 
 <script setup>
-import InDev from '../../../InDev.vue';
+import Contact from '../Contact.vue';
 import GetBack from '../GetBack.vue';
 </script>
 

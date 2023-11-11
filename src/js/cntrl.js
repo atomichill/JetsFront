@@ -6,7 +6,7 @@ export const cntrl = function(value){
         clearSearch()
         store.commit('setFilter', value)
     } 
-    if(value === 'Send' || value === 'Settings'){
+    if(value === 'Send' || value === 'Settings' || value == 'Profile'){
         store.commit('setOption', value)
     }
 }
