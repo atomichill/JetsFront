@@ -23,6 +23,7 @@ import img from '../../../img/profile.jpg'
         display: flex;
         img{
             width: 130px;
+            @include imgborder;
         }
         .info-container{
             margin-left: 10px;

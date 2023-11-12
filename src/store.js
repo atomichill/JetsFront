@@ -9,7 +9,8 @@ export const store = createStore({
             sort: '',
             search: '',
             settings: '',
-            showBlockWindow: false
+            showBlockWindow: false,
+            blackTheme: false
         }
     },
     mutations: {
@@ -40,6 +41,9 @@ export const store = createStore({
         },
         setShowBlockWindow(state){
             state.showBlockWindow = !state.showBlockWindow
+        },
+        setBlackTheme(state){
+            state.blackTheme = !state.blackTheme
         }
     }
 })

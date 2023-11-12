@@ -1,6 +1,6 @@
 <template>
   <div class="settings-wrap">
-    <div class="btn" v-for="item in items" :key="item.setting" :id="item.setting" @click="cntrl(item.setting)">
+    <div :class="store.state.blackTheme? 'btn black': 'btn white'" v-for="item in items" :key="item.setting" :id="item.setting" @click="cntrl(item.setting)">
         <span :class="item.icon"/>
         <button>{{ item.setting }}</button>
     </div>
@@ -11,7 +11,7 @@
 import { settings } from '../../../js/settings/settings';
 import { cntrl } from '../../../js/cntrl';
 import { ref } from 'vue';
-
+import { store } from '../../../store';
 const items = ref(settings)
 </script>
 
@@ -28,7 +28,22 @@ const items = ref(settings)
         color: $txtUnactiveClr;
         cursor: pointer;
       }
-      &:hover{
+    }
+}
+.black{
+  &:hover{
+    background-color: $bgBtnActive;
+
+    button{
+      color: $txtActiveBlack;
+    }
+    span{
+      color: $txtActiveBlack;
+    }
+  }
+}
+.white{
+  &:hover{
         background-color: $bgBtnClr;
 
         button{
@@ -38,6 +53,6 @@ const items = ref(settings)
           color: $txtActiveClr;
         }
       }
-    }
 }
+
 </style>

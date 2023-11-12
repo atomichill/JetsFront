@@ -30,8 +30,7 @@ import '../../../../fonts.css'
             display: block;
             width: 100%;
             height: auto;
-            border-radius: 15px;
-            border: 3px solid $txtActiveClr;
+            @include imgborder;
             &:hover{
                 cursor: pointer;
             }

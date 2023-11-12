@@ -1,7 +1,7 @@
 <template>
   <div class="options-wrap">
     <div class="btn-container">
-      <div class="btn" v-for="item in items" :key="item.option" :id="item.option" @click="cntrl(item.option)">
+      <div :class="store.state.blackTheme? 'btn black': 'btn white'" v-for="item in items" :key="item.option" :id="item.option" @click="cntrl(item.option)">
         <span :class="item.icon"></span>
         <button>{{ item.option }}</button>
       </div>
@@ -14,6 +14,7 @@ import { ref } from 'vue';
 import '../../../fonts.css'
 import {options} from '../../../js/settings/options'
 import { cntrl } from '../../../js/cntrl';
+import { store } from '../../../store';
 
 const items = ref(options)
 </script>
@@ -31,8 +32,13 @@ const items = ref(options)
         span.pi {
         color: $txtUnactiveClr;
         }
-        &:hover {
-            background-color: $bgBtnClr;
+    }
+  }
+}
+
+.white{
+  &:hover {
+            background-color: $bgBtnClr; 
             button {
                 color: $txtActiveClr;
             }
@@ -40,6 +46,15 @@ const items = ref(options)
                 color: $txtActiveClr;
             }
         }
+}
+.black{
+  &:hover {
+    background-color: $bgBtnActive;
+    button {
+      color: $txtActiveBlack;
+    }
+    span.pi {
+      color: $txtActiveBlack;
     }
   }
 }

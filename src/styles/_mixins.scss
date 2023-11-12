@@ -76,3 +76,8 @@
     font-family: 'Tilt Neon';
     color: $txtActiveClr;
 }
+
+@mixin imgborder{
+    border-radius: 15px;
+    border: 3px solid $txtActiveClr;
+}

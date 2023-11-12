@@ -1,5 +1,5 @@
 <template>
-    <div class="inbox-wrap">
+    <div :class="store.state.blackTheme? 'inbox-wrap black': 'inbox-wrap'">
         <InboxHeader/>
         <Sort/>
         <div class="cards">
@@ -12,6 +12,7 @@
 import InboxHeader from './InboxElements/header/InboxHeader.vue';
 import Sort from './InboxElements/header/Sort.vue'
 import Card from './InboxElements/card/Card.vue';
+import { store } from '../../store';
 </script>
 
 <style lang="scss" scoped>
@@ -26,5 +27,8 @@ import Card from './InboxElements/card/Card.vue';
         overflow: scroll;
         height: 480px;
     }
+}
+.black{
+    background-color: #34495E;
 }
 </style>

@@ -12,6 +12,9 @@
         <span v-if="store.state.option == 'Profile'">
             <ProfileView/>
         </span>
+        <span v-if="store.state.option == ''">
+            <Wellcome/>
+        </span>
     </div>
 </template>
 
@@ -20,6 +23,7 @@ import SelectedMail from './SelectedMail/SelectedMail.vue';
 import sendMail from './sendMail/sendMail.vue';
 import Settings from './settings/Settings.vue';
 import ProfileView from './profileView/ProfileView.vue';
+import Wellcome from './Wellcome.vue';
 import { store } from '../../store';
 </script>
 

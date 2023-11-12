@@ -25,8 +25,7 @@ import '../../../fonts.css'
     .image{
         margin-top: 10px;
         width: 70px;
-        border-radius: 20%;
-        border: 2px solid $txtActiveClr;
+        @include imgborder;
     }
     p{
         font-size: 13px;

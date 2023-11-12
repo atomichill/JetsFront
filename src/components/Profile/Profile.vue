@@ -1,5 +1,5 @@
 <template>
-    <div class="profile-wrap">
+    <div :class="store.state.blackTheme ? 'profile-wrap black': 'profile-wrap'">
         <Image/>
         <Options/>
         <Settings/>
@@ -12,6 +12,7 @@ import Image from './ProfileElements/Image.vue';
 import Options from './ProfileElements/Options.vue';
 import Settings from './ProfileElements/Settings.vue';
 import LogOut from './ProfileElements/LogOut.vue';
+import { store } from '../../store';
 </script>
 
 <style lang="scss" scoped>
@@ -21,5 +22,8 @@ import LogOut from './ProfileElements/LogOut.vue';
     background-color: $bg;
 
     @include flex-col;
+}
+.black{
+    background-color: $bgBlack;
 }
 </style>

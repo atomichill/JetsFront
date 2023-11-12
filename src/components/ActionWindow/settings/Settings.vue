@@ -1,5 +1,5 @@
 <template>
-    <div class="settings-wrap">
+    <div :class="store.state.blackTheme? 'settings-wrap black':'settings-wrap'">
         <changeImage/>
         <div class="general-settings" v-if="store.state.settings == ''">
             <h1>Preferences</h1>
@@ -43,5 +43,8 @@ import SupportSettings from './settingsElements/view/SupportSettings.vue';
             @include title
         }
     }
+}
+.black{
+    background-color: $bgBlack;
 }
 </style>
