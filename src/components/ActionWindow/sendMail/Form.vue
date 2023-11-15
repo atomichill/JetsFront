@@ -10,7 +10,7 @@
                 <input type="file" name="file-upload" id="file" multiple>
                 <input type="file" name="file-image" id="file-image" multiple accept="image/*">
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" class="btn">Send</button>
         </form>
     </div>
 </template>
@@ -25,12 +25,27 @@
     form{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        
         input{
             margin-top: 10px;
+            @include inpt;
+            background: none;
+            border-bottom: 2px solid $bg;
         }
         textarea{
             margin-top: 10px;
             resize: none;
+            background-color: $bgBtnActive;
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button{
+            margin-top: 40px;
+            @include button;
         }
     }
 }

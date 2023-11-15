@@ -25,10 +25,9 @@ const searchQuery = ref('')
             width: 300px;
             height: $buttonHeight;
             @include reset;
-            font-size: 15px;
-            color: #7F8C8D;
             margin-left: 20px;
-            font-family: 'Tilt Neon';
+            @include secondaryText;
+            
         }
 
 }

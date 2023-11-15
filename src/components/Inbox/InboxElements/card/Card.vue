@@ -1,10 +1,10 @@
 <template>
-    <div class="card-wrap" v-for="item in filteredItems" @click="mailView(item)">
+    <div :class="store.state.blackTheme? 'card-wrap black': 'card-wrap white'" v-for="item in filteredItems" @click="mailView(item)">
         <div class="card-header">
             <span v-if="!item.read" class="pi pi-bookmark"/>
             <span v-if="item.read" class="pi pi-bookmark-fill"/>
             <img :src="profile" alt="profile img">
-            <div class="head">
+            <div :class="store.state.blackTheme? 'head black-head': 'head'">
                 <div>
                     <p>{{ item.from }}</p>
                     <div>
@@ -83,9 +83,7 @@ const filteredItems = computed(() => {
             display: flex;
             justify-content: space-between;
             p{
-                font-family: 'Tilt Neon';
-                font-size: 14px;
-                color:#7F8C8D; 
+                @include secondaryText;
             }
             h1{
                 margin-top: 10px;
@@ -105,10 +103,22 @@ const filteredItems = computed(() => {
         color:#7F8C8D;
         font-family: 'Tilt Neon'; 
     }
-
+}
+.white{
     &:hover{
         background-color: $cardActive;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+.black{
+    &:hover{
+        background-color: $cardActiveBlack;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+.black-head{
+    h1{
+        color: white;
     }
 }
 </style>

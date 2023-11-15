@@ -1,11 +1,12 @@
 <template>
-    <div class="profview-wrap">
+    <div :class="store.state.blackTheme? 'profview-wrap black':'profview-wrap'">
         <ProfData/>
     </div>
 </template>
 
 <script setup>
 import ProfData from "./ProfData.vue"
+import { store } from "../../../store";
 </script>
 
 <style lang="scss" scoped>
@@ -14,5 +15,8 @@ import ProfData from "./ProfData.vue"
     width: 100%;
     background-color: $bg;
     @include center;
+}
+.black{
+    background-color: $bgBlack;
 }
 </style>

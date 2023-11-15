@@ -29,30 +29,12 @@ const items = ref(settings)
         cursor: pointer;
       }
     }
-}
-.black{
-  &:hover{
-    background-color: $bgBtnActive;
-
-    button{
-      color: $txtActiveBlack;
+    .black{
+      @include hoverblack;
     }
-    span{
-      color: $txtActiveBlack;
+    .white{
+      @include hoverwhite;
     }
-  }
-}
-.white{
-  &:hover{
-        background-color: $bgBtnClr;
-
-        button{
-          color: $txtActiveClr;
-        }
-        span{
-          color: $txtActiveClr;
-        }
-      }
 }
 
 </style>

@@ -24,15 +24,11 @@ function handleSortChange() {
 .sort-wrap{
     padding: 20px;
     label{
-        font-size: 16px;
-        color: #7F8C8D;
-        font-family: 'Tilt Neon';
+        @include secondaryText;
     }
     select{
         @include reset;
-        font-size: 16px;
-        color: #7F8C8D;
-        font-family: 'Tilt Neon';
+        @include secondaryText;
 
         option{
             @include reset;

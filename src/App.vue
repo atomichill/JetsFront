@@ -1,9 +1,8 @@
 <script setup>
-import Dashboard from './components/Dashboard/Dashboard.vue';
 </script>
 
 <template>
-  <Dashboard/>
+  <router-view/>
 </template>
 
 <style scoped>

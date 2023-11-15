@@ -25,36 +25,19 @@ const items = ref(options)
   .btn-container {
     @include btn-container;
     .btn {
-        @include btn-wrap;
-        button {
-          @include button
-        }
-        span.pi {
+      @include btn-wrap;
+      button {
+        @include button
+      }
+      span.pi {
         color: $txtUnactiveClr;
-        }
+      }
     }
-  }
-}
-
-.white{
-  &:hover {
-            background-color: $bgBtnClr; 
-            button {
-                color: $txtActiveClr;
-            }
-            span.pi {
-                color: $txtActiveClr;
-            }
-        }
-}
-.black{
-  &:hover {
-    background-color: $bgBtnActive;
-    button {
-      color: $txtActiveBlack;
+    .black{
+      @include hoverblack;
     }
-    span.pi {
-      color: $txtActiveBlack;
+    .white{
+      @include hoverwhite;
     }
   }
 }
