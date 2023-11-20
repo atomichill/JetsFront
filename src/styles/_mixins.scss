@@ -112,3 +112,27 @@
         }
     }
 }
+
+@mixin authfield{
+    height: 30px;
+    margin-top: 10px;
+    border-bottom: 2px solid $bg;
+}
+
+@mixin authFormStyles{
+    display: flex;
+    flex-direction: column;
+    input{
+        @include reset;
+        @include authfield;
+    }
+    button{
+        @include button;
+        margin-top: 40px;
+        color: $bg;
+        font-size: 17px;
+    }
+    ::placeholder{
+        font-family: 'Tilt Neon';
+    }
+}

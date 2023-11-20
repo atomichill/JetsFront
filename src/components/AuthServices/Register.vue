@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form action="submit">
+        <form action="submit" class="register-wrap">
             <input type="text" placeholder="name">
             <input type="text" placeholder="lastname">
             <input type="password" placeholder="password">
@@ -15,5 +15,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+.register-wrap{
+    @include authFormStyles;
+}
 </style>
